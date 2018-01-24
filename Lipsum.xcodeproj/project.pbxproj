@@ -10,6 +10,7 @@
 		A9ACBD9C2017DADA00948EBE /* Lipsum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9ACBD922017DADA00948EBE /* Lipsum.framework */; };
 		A9ACBDA12017DADA00948EBE /* LipsumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACBDA02017DADA00948EBE /* LipsumTests.swift */; };
 		A9ACBDA32017DADA00948EBE /* Lipsum.h in Headers */ = {isa = PBXBuildFile; fileRef = A9ACBD952017DADA00948EBE /* Lipsum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9ACBDAD2017DB0700948EBE /* Lipsum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACBDAC2017DB0700948EBE /* Lipsum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A9ACBD9B2017DADA00948EBE /* LipsumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LipsumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9ACBDA02017DADA00948EBE /* LipsumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LipsumTests.swift; sourceTree = "<group>"; };
 		A9ACBDA22017DADA00948EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9ACBDAC2017DB0700948EBE /* Lipsum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lipsum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				A9ACBD952017DADA00948EBE /* Lipsum.h */,
 				A9ACBD962017DADA00948EBE /* Info.plist */,
+				A9ACBDAC2017DB0700948EBE /* Lipsum.swift */,
 			);
 			path = Lipsum;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					A9ACBD912017DADA00948EBE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					A9ACBD9A2017DADA00948EBE = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9ACBDAD2017DB0700948EBE /* Lipsum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		A9ACBDA72017DADA00948EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +352,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xrubio.Lipsum;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +361,7 @@
 		A9ACBDA82017DADA00948EBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,7 +382,9 @@
 		A9ACBDAA2017DADA00948EBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LipsumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xrubio.LipsumTests;
@@ -387,7 +397,9 @@
 		A9ACBDAB2017DADA00948EBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LipsumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xrubio.LipsumTests;
